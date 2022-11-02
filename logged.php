@@ -1,6 +1,7 @@
-<?php
-
-?>
+<!-- <?php
+session_start();
+$user = $_SESSION["user"]
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@
     <title>Logged in</title>
 </head>
 <body>
-Welcome <?php echo $_POST["name"]; ?><br>
+Welcome <?php echo $user; ?><br>
 <form action="index.php" method="post">
     <input type="submit" value="Logout">
 </form>
